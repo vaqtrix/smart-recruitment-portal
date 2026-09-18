@@ -1,0 +1,57 @@
+:root {
+  --brand: #0d8577;
+  --brand-dark: #0a6d63;
+  --ink: #14203c;
+}
+
+body {
+  background: #f2f5f8;
+  color: #1f2733;
+}
+
+/* brand navbar */
+.navbar.brandbar {
+  background: linear-gradient(120deg, #14203c, #223255);
+}
+.navbar.brandbar .navbar-brand,
+.navbar.brandbar .nav-link { color: #eef2fb !important; }
+.navbar.brandbar .nav-link.active { color: #fff !important; font-weight: 600; }
+.brand-logo {
+  width: 30px; height: 30px; border-radius: 8px;
+  background: var(--brand); color: #042a25;
+  display: inline-grid; place-items: center; font-weight: 700; margin-right: 8px;
+}
+
+/* buttons in brand colour */
+.btn-brand { background: var(--brand); border-color: var(--brand); color: #fff; }
+.btn-brand:hover { background: var(--brand-dark); border-color: var(--brand-dark); color: #fff; }
+.text-brand { color: var(--brand) !important; }
+
+/* hero */
+.hero {
+  background: linear-gradient(120deg, #14203c, #26365d);
+  color: #eef2fb;
+  border-radius: 16px;
+  padding: 56px 44px;
+}
+.hero h1 { font-weight: 700; letter-spacing: -.5px; }
+
+/* stat cards */
+.stat-card { border: none; border-radius: 14px; box-shadow: 0 12px 30px -20px rgba(20,32,60,.5); }
+.stat-num { font-size: 30px; font-weight: 700; line-height: 1; }
+.stat-label { color: #6b7688; font-size: 13px; }
+
+/* generic card polish */
+.card.soft { border: none; border-radius: 16px; box-shadow: 0 16px 40px -26px rgba(20,32,60,.5); }
+
+/* table */
+.table thead th { color: #6b7688; font-size: 12.5px; text-transform: none; font-weight: 600; }
+.avatar {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: #e6f6f2; color: var(--brand-dark);
+  display: inline-grid; place-items: center; font-weight: 700; font-size: 13px;
+}
+
+/* choice chips */
+.chip { cursor: pointer; user-select: none; }
+.chip input { margin-right: 6px; }
